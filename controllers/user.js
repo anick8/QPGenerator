@@ -1,5 +1,5 @@
 
-var User = require('../models/User');
+/*var User = require('../models/User');
 var asyncHandler = require('../middleware/async');
 const ErrorResponse = require('../utils/errorResponse');
 
@@ -12,7 +12,7 @@ exports.read = asyncHandler(async (req,res,next) => {
             data:result
         })
 
-    }), */   
+    }),  
 exports.register = asyncHandler(async(req,res,next) => {
         
         
@@ -63,3 +63,4 @@ exports.logout = asyncHandler(async(req,res,next) => {
 
 
 
+*/

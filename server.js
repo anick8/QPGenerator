@@ -4,19 +4,17 @@ const app = express();
 var dotenv = require('dotenv');
 var errorHandler = require('./middleware/error')
 
-const users = require('./app/User')
-const jobs = require('./app/Job')
+//const users = require('./app/User')
+const jobs = require('./app/Question')
 
 dotenv.config({ path: './config/config.env' });
-const connectdb = require('./config/db');
-
-connectdb();
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-//require('./app/Routes')(app,console);
-app.use('/api/v1/users', users);
-app.use('/api/v1/jobs', jobs);
+
+
+//app.use('/api/v1/users', users);
+app.use('/api/v1/question', jobs);
 
 app.use(errorHandler);
 
@@ -27,8 +25,3 @@ var server = app.listen(PORT, () => {
         console.log(`server running at the port :${PORT}`.cyan.underline.bold);
 });
 
-process.on('unhandledRejection', (err, promise) => {
-    console.log(`Unhandled Rejection at: Promise, ${promise}, 'reason:', ${err.message}`)
-    // application specific logging, throwing an error, or other logic here
-    server.close(() => {process.exit(1)})
-}); 

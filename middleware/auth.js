@@ -1,4 +1,4 @@
-const  asyncHandler = require('./async');
+/*const  asyncHandler = require('./async');
 const ErrorResponse = require('../utils/errorResponse');
 const User = require('../models/User');
 const jwt = require('jsonwebtoken');
@@ -32,4 +32,4 @@ exports.authorize = (...roles) => {
     next();
  }
  
-}
+}*/
