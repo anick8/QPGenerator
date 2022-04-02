@@ -1,0 +1,22 @@
+[{
+		"Route": "http://localhost:8080/api/v1/question/insertQuestion",
+		"data":[{
+		"Question": "What is Carnot engine?",
+		"Subject": "Physics",
+		"Topic": "Thermodynamics",
+		"Marks":2,
+		"Difficulty":"Easy"	
+	}]
+},
+{
+	"Route": "http://localhost:8080/api/v1/question/getQuestionPaper",
+	"data":[{
+        "Marks":30,
+        "Difficulty":{
+            "Easy":50,
+            "Medium":40,
+            "Hard":10
+        }
+    }]
+}
+]
