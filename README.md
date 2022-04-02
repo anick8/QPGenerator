@@ -9,6 +9,11 @@ npm install
 
 npm start (OR) node index.js
 
+I have also added a python test script with a sample JSON data in the test/ folder
+Run using-
+ 
+ python3 testAPI.py testData.json
+
 # Routes
 
 ## /getQuestionPaper
@@ -31,11 +36,11 @@ Request Body -
 
 Inserts a question and details into the Database
     
- req.body.Question - A unique new Question  
- req.body.Subject - A subject
- req.body.Topic - A Topic
- req.body.Marks - Marks in integer
- req.body.Difficulty - any of ["Easy","Medium","Hard"]
+ - req.body.Question - A unique new Question  
+ - req.body.Subject - A subject
+ - req.body.Topic - A Topic
+ - req.body.Marks - Marks in integer
+ - req.body.Difficulty - any of ["Easy","Medium","Hard"]
 
  Response Body - 
  - res.body.data  - Contains the QuestionUUID.
