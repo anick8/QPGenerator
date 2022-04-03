@@ -1,15 +1,369 @@
 [{
-		"Route": "http://localhost:8080/api/v1/question/insertQuestion",
+		"Route": "https://qp-creater.herokuapp.com/api/v1/question/insertQuestion",
 		"data":[{
-		"Question": "What is Carnot engine?",
-		"Subject": "Physics",
-		"Topic": "Thermodynamics",
-		"Marks":2,
-		"Difficulty":"Easy"	
-	}]
+			"Question": "The minimum amount of energy required to remove the most loosely bonded electron is called as?",
+			"Subject": "Physics",
+			"Topic": "Nuclear Physics",
+			"Marks":10,
+			"Difficulty":"Easy"	
+		 },
+		 {
+			"Question": "When does the value of energy become zero for an electron?",
+			"Subject": "Physics",
+			"Topic": "Nuclear Physics",
+			"Marks":1,
+			"Difficulty":"Easy"	
+		},
+		{
+			"Question": "What does astrolabe determine??",
+			"Subject": "Physics",
+			"Topic": "Thermodynamics",
+			"Marks":10,
+			"Difficulty":"Easy"	
+		},
+		{
+			"Question": "Nuclear sizes are expressed in a unit named?",
+			"Subject": "Physics",
+			"Topic": "Nuclear Physics",
+			"Marks":1,
+			"Difficulty":"Easy"	
+		},
+		{
+			"Question": "The speed of light will be minimum while passing through?",
+			"Subject": "Physics",
+			"Topic": "Quantum Physics",
+			"Marks":2,
+			"Difficulty":"Easy"	
+		},
+		{
+			"Question": "What is Carnot engine?",
+			"Subject": "Physics",
+			"Topic": "Thermodynamics",
+			"Marks":10,
+			"Difficulty":"Medium"	
+		},
+		{
+			"Question": "Define what is Thermal Conductivity??",
+			"Subject": "Physics",
+			"Topic": "Thermodynamics",
+			"Marks":10,
+			"Difficulty":"Medium"	
+		},
+		{
+			"Question": "What is the Half life of Uranium?",
+			"Subject": "Physics",
+			"Topic": "Nuclear Physics",
+			"Marks":5,
+			"Difficulty":"Medium"
+
+		},
+		{
+			"Question": "State the first law of Thermodynamics?",
+			"Subject": "Physics",
+			"Topic": "Quantum Physics",
+			"Marks":5,
+			"Difficulty":"Easy"	
+		},
+		{
+			"Question": "What is the difference between the heat capacity and the heat capacity of a substance?",
+			"Subject": "Physics",
+			"Topic": "Thermodynamics",
+			"Marks":5,
+			"Difficulty":"Medium"	
+		},
+		{
+			"Question": "How does the internal energy of a substance change when it is heated?",
+			"Subject": "Physics",
+			"Topic": "Thermodynamics",
+			"Marks":1,
+			"Difficulty":"Medium"	
+		},
+		{
+			"Question": "When a gas is suddenly compressed its energy content increases,Why ?",
+			"Subject": "Physics",
+			"Topic": "Thermodynamics",
+			"Marks":1,
+			"Difficulty":"Medium"	
+		},
+		{
+			"Question": "Explain Blackhole information Paradox",
+			"Subject": "Physics",
+			"Topic": "Quantum Physics",
+			"Marks":10,
+			"Difficulty":"Hard"
+
+		},
+		{
+			"Question": "Explain the concept of the black hole",
+			"Subject": "Physics",
+			"Topic": "Quantum Physics",
+			"Marks":10,
+			"Difficulty":"Hard"
+		},
+		{
+			"Question": "Explain Supernova",
+			"Subject": "Physics",
+			"Topic": "Quantum Physics",
+			"Marks":5,
+			"Difficulty":"Hard"
+		},
+		{
+			"Question": "Explain Shrodingers Cat?",
+			"Subject": "Physics",
+			"Topic": "Quantum Physics",
+			"Marks":5,
+			"Difficulty":"Hard"
+		},
+		{
+			"Question": "Explain why light behaves like a wave",
+			"Subject": "Physics",
+			"Topic": "Quantum Physics",
+			"Marks":10,
+			"Difficulty":"Hard"
+		},
+		{
+			"Question": "state the incertainity principle?",
+			"Subject": "Physics",
+			"Topic": "Quantum Physics",
+			"Marks":1,
+			"Difficulty":"Hard"
+		},
+		{
+			"Question": "Who proposed String theory?",
+			"Subject": "Physics",
+			"Topic": "Quantum Physics",
+			"Marks":1,
+			"Difficulty":"Hard"
+		},
+		{
+			"Question": "Who proposed the idea of quantam computers?",
+			"Subject": "Physics",
+			"Topic": "Quantum Physics",
+			"Marks":1,
+			"Difficulty":"Hard"
+		},
+		{
+			"Question": "State the formaula for the frequency of a wave?",
+			"Subject": "Physics",
+			"Topic": "Quantum Physics",
+			"Marks":1,
+			"Difficulty":"Hard"
+		},
+		{
+			"Question": "What is the area of a circle with a diameter of 16?",
+			"Subject": "Maths",
+			"Topic": "Geometry",
+			"Marks":5,
+			"Difficulty":"Easy"
+		},
+		{
+			"Question": "What is an Isoseles triangle?",
+			"Subject": "Maths",
+			"Topic": "Geometry",
+			"Marks":5,
+			"Difficulty":"Easy"
+		},
+		{
+			"Question": "Explain the pythogoras theorom?",
+			"Subject": "Maths",
+			"Topic": "Geometry",
+			"Marks":5,
+			"Difficulty":"Easy"
+		},
+		{
+			"Question": "What is the Area of a square?",
+			"Subject": "Maths",
+			"Topic": "Geometry",
+			"Marks":1,
+			"Difficulty":"Easy"
+		},
+		{
+			"Question": "What is The Area of a circle?",
+			"Subject": "Maths",
+			"Topic": "Geometry",
+			"Marks":2,
+			"Difficulty":"Easy"
+		},
+		{
+			"Question": "What is the area of a rectangle?",
+			"Subject": "Maths",
+			"Topic": "Geometry",
+			"Marks":1,
+			"Difficulty":"Easy"
+		},
+		{
+			"Question": "What is the formula of a tangent?",
+			"Subject": "Maths",
+			"Topic": "Geometry",
+			"Marks":10,
+			"Difficulty":"Medium"
+		},
+		{
+			"Question": "Explain the Volume of a hypercube",
+			"Subject": "Maths",
+			"Topic": "Geometry",
+			"Marks":5,
+			"Difficulty":"Medium"
+		},
+		{
+			"Question": "Calculate the the quadratic expression x^2+2x+3=15?",
+			"Subject": "Maths",
+			"Topic": "Algebra",
+			"Marks":10,
+			"Difficulty":"Easy"
+		},
+		{
+			"Question": "Calculate the Root of the given complex number x^6 = 2x +3?",
+			"Subject": "Maths",
+			"Topic": "Algebra",
+			"Marks":10,
+			"Difficulty":"Easy"
+		},
+		{
+			"Question": "Differntiate 2x+3?",
+			"Subject": "Maths",
+			"Topic": "Algebra",
+			"Marks":5,
+			"Difficulty":"Easy"
+		},
+		{
+			"Question": "Difference of 2x+3 and 3x+2?",
+			"Subject": "Maths",
+			"Topic": "Algebra",
+			"Marks":1,
+			"Difficulty":"Easy"
+		},
+		{
+			"Question": "Intergrate 2x+3?",
+			"Subject": "Maths",
+			"Topic": "Algebra",
+			"Marks":1,
+			"Difficulty":"Easy"
+		},
+		{
+			"Question": "Differentiate 4x^2?",
+			"Subject": "Maths",
+			"Topic": "Algebra",
+			"Marks":1,
+			"Difficulty":"Easy"
+		},
+		{
+			"Question": "Differentiate 3x^3?",
+			"Subject": "Maths",
+			"Topic": "Algebra",
+			"Marks":2,
+			"Difficulty":"Easy"
+		},
+		{
+			"Question": "Intergrate 3x^3+2x?",
+			"Subject": "Maths",
+			"Topic": "Algebra",
+			"Marks":10,
+			"Difficulty":"Medium"
+		},
+		{
+			"Question": "Intergrate 4x^2+3x?",
+			"Subject": "Maths",
+			"Topic": "Algebra",
+			"Marks":10,
+			"Difficulty":"Medium"
+		},
+		{
+			"Question": "Differentiate 4x^2+3x+2?",
+			"Subject": "Maths",
+			"Topic": "Algebra",
+			"Marks":10,
+			"Difficulty":"Medium"
+		},
+		{
+			"Question": "Intergrate and Differentiate 6x+3x^2+7X^4?",
+			"Subject": "Maths",
+			"Topic": "Algebra",
+			"Marks":5,
+			"Difficulty":"Medium"
+		},
+		{
+			"Question": "What is (a+b)^2?",
+			"Subject": "Maths",
+			"Topic": "Algebra",
+			"Marks":5,
+			"Difficulty":"Medium"
+		},
+		{
+			"Question": "What is (a-b)^2?",
+			"Subject": "Maths",
+			"Topic": "Algebra",
+			"Marks":1,
+			"Difficulty":"Medium"
+		},
+		{
+			"Question": "Evaluate (a+b+c)^2?",
+			"Subject": "Maths",
+			"Topic": "Algebra",
+			"Marks":2,
+			"Difficulty":"Medium"
+		},
+		{
+			"Question": "Evaluate sinx^2+cosx=0?",
+			"Subject": "Maths",
+			"Topic": "Algebra",
+			"Marks":10,
+			"Difficulty":"Hard"
+		},
+		{
+			"Question": "Differentiate tanx/cot(x/2) ?",
+			"Subject": "Maths",
+			"Topic": "Algebra",
+			"Marks":10,
+			"Difficulty":"Hard"
+		},
+		{
+			"Question": "Intergrate secx^2+cotx/(sin^2x)?",
+			"Subject": "Maths",
+			"Topic": "Algebra",
+			"Marks":10,
+			"Difficulty":"Hard"
+		},
+		{
+			"Question": "Evaluate (sinx+cosx)^2?",
+			"Subject": "Maths",
+			"Topic": "Algebra",
+			"Marks":5,
+			"Difficulty":"Hard"
+		},
+		{
+			"Question": "Evaluate (cotx+tanx)^2?",
+			"Subject": "Maths",
+			"Topic": "Algebra",
+			"Marks":5,
+			"Difficulty":"Hard"
+		},
+		{
+			"Question": "Evaluate (Bsec^3x)^2?",
+			"Subject": "Maths",
+			"Topic": "Algebra",
+			"Marks":2,
+			"Difficulty":"Hard"
+		},
+		{
+			"Question": "Evaluate (logx+10)^2?",
+			"Subject": "Maths",
+			"Topic": "Algebra",
+			"Marks":1,
+			"Difficulty":"Hard"
+		},
+		{
+			"Question": "Evaluate (e^x)^2?",
+			"Subject": "Maths",
+			"Topic": "Algebra",
+			"Marks":1,
+			"Difficulty":"Hard"
+		}
+]
+
 },
 {
-	"Route": "http://localhost:8080/api/v1/question/getQuestionPaper",
+	"Route": "https://qp-creater.herokuapp.com/api/v1/question/getQuestionPaper",
 	"data":[{
         "Marks":30,
         "Difficulty":{
