@@ -7,10 +7,11 @@ var math = require('math');
 
 
 exports.insertQuestion = asyncHandler(async (req,res,next) => {
-        var QuestionUUID = hash.hashing(); //Generate UUID for each question
+        var Ts = Date.now();     
+        var QuestionUUID = hash.hashing(Ts); //Generate UUID for each question
         var qarg3 =  [QuestionUUID,req.body.Question,req.body.Subject,req.body.Topic,req.body.Marks,req.body.Difficulty];     
         var qname3 = 'Insert into "QuestionTable" ("QuestionUUID","Question","Subject","Topic","Marks","Difficulty") values($1,$2,$3,$4,$5,$6)'
-        var result = await pgsql.execquery(qname3,qarg3,next)
+        var result = await pgsql.execquery(qname3,qarg3,next) // Insert question into QuestionTable
         if(!result) return 
         if(result.rowCount == 0) return next(new ErrorResponse(`Unable to insert`,500))
         
@@ -48,7 +49,7 @@ exports.getQuestionPaper = asyncHandler(async(req,res,next) => {
             
             
             for(item of result.rows) Markslist.push(item.Marks);//Iterate through the questions and add the marks to the list
-            console.log(Markslist);
+        
             MarksDistribution = findSumCombo(Markslist,MarkType[difficulty]); // Find the combination of marks that make up the total for each difficulty level ,f() => findSumCombo(Markslist,TotalMarks)
     
             var MarksDistribution = MarksDistribution.map(Number)
@@ -66,18 +67,7 @@ exports.getQuestionPaper = asyncHandler(async(req,res,next) => {
         
 })
 /*exports.update = asyncHandler(async(req,res,next) => {
-    var Job = await JobSchema.findById(req.body.id)     
-    if(!Job) return next(new ErrorResponse(`Job not found with id ${req.body.id} `,404))
-    
-
-
-    if(req.user.role != 'Jobcreater' || req.user.id != Job.user.toString()){
-        return next(new ErrorResponse('Not authorized to update a Job',401))    
-    }
-    var Job = await JobSchema.findByIdAndUpdate(req.body.id,req.body,{
-        new:true,
-        runValidators:true
-    })
+   
     
 
     res.status(200).json({
@@ -90,13 +80,7 @@ exports.getQuestionPaper = asyncHandler(async(req,res,next) => {
     
 })
 exports.deleteQuestion = asyncHandler(async(req,res,next) => {
-    var Job = await JobSchema.findById(req.body.id)    
-    if(!Job) return next(new ErrorResponse(`Job not found with id ${req.body.id} `,404))
-
-    if(req.user.role != 'Jobcreater' || req.user.id != Job.user.toString()){
-     return next(new ErrorResponse('Not authorized to delete a Job',401))
-    }
-    var Job = await Job.remove()
+   
     
 
     res.status(200).json({
