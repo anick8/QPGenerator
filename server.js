@@ -5,7 +5,7 @@ var dotenv = require('dotenv');
 var errorHandler = require('./middleware/error')
 
 //const users = require('./app/User')
-const jobs = require('./app/Question')
+const question = require('./app/Question')
 
 dotenv.config({ path: './config/config.env' });
 
@@ -14,7 +14,7 @@ app.use(express.json());
 
 
 //app.use('/api/v1/users', users);
-app.use('/api/v1/question', jobs);
+app.use('/api/v1/question', question);
 
 app.use(errorHandler);
 
