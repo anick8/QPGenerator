@@ -7,7 +7,7 @@ Run using -
 
 npm install
 
-npm start (OR) node index.js
+npm start (OR) node server.js
 
 I have also added a python test script with a sample JSON data in the test/ folder
 Run using-
